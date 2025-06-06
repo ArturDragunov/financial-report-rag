@@ -1,0 +1,117 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="white" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- PDF Input -->
+  <rect x="50" y="100" width="80" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="90" y="135" text-anchor="middle" font-size="14">PDF</text>
+  
+  <!-- Extraction -->
+  <rect x="180" y="50" width="100" height="50" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="230" y="70" text-anchor="middle" font-size="12">Extract</text>
+  <text x="230" y="85" text-anchor="middle" font-size="12">Tables</text>
+  
+  <rect x="180" y="130" width="100" height="50" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="230" y="150" text-anchor="middle" font-size="12">Extract</text>
+  <text x="230" y="165" text-anchor="middle" font-size="12">Text</text>
+  
+  <!-- Processing -->
+  <rect x="330" y="50" width="100" height="50" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="380" y="70" text-anchor="middle" font-size="12">Summarize</text>
+  <text x="380" y="85" text-anchor="middle" font-size="12">Tables</text>
+  
+  <rect x="330" y="130" width="100" height="50" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="380" y="150" text-anchor="middle" font-size="12">Chunk</text>
+  <text x="380" y="165" text-anchor="middle" font-size="12">Text</text>
+  
+  <!-- Embedding -->
+  <rect x="480" y="90" width="100" height="50" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="530" y="115" text-anchor="middle" font-size="14">Embedding</text>
+  
+  <!-- MongoDB -->
+  <rect x="630" y="90" width="100" height="50" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="680" y="115" text-anchor="middle" font-size="14">MongoDB</text>
+  
+  <!-- Query Input -->
+  <rect x="50" y="250" width="80" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="90" y="285" text-anchor="middle" font-size="14">Query</text>
+  
+  <!-- Classification -->
+  <rect x="180" y="250" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="230" y="275" text-anchor="middle" font-size="12">Query</text>
+  <text x="230" y="290" text-anchor="middle" font-size="12">Classification</text>
+  <text x="230" y="305" text-anchor="middle" font-size="10">(Metadata)</text>
+  
+  <!-- Query Rewrite -->
+  <rect x="330" y="250" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="380" y="270" text-anchor="middle" font-size="12">Query</text>
+  <text x="380" y="285" text-anchor="middle" font-size="12">Rewrite</text>
+  <text x="380" y="300" text-anchor="middle" font-size="10">(Financial LLM)</text>
+  
+  <!-- RAG -->
+  <rect x="480" y="250" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="530" y="285" text-anchor="middle" font-size="14">RAG</text>
+  
+  <!-- Filter -->
+  <rect x="630" y="250" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="680" y="275" text-anchor="middle" font-size="12">Filter by</text>
+  <text x="680" y="290" text-anchor="middle" font-size="12">Metadata</text>
+  
+  <!-- LLM Summary -->
+  <rect x="780" y="250" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="830" y="275" text-anchor="middle" font-size="12">LLM</text>
+  <text x="830" y="290" text-anchor="middle" font-size="12">Summary</text>
+  
+  <!-- Streamlit -->
+  <rect x="780" y="350" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="830" y="385" text-anchor="middle" font-size="14">Streamlit</text>
+  
+  <!-- DOCX Export -->
+  <rect x="780" y="450" width="100" height="60" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  <text x="830" y="480" text-anchor="middle" font-size="12">Save to</text>
+  <text x="830" y="495" text-anchor="middle" font-size="12">DOCX</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+  
+  <!-- PDF to Extraction -->
+  <line x1="130" y1="120" x2="180" y2="75" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="130" y1="140" x2="180" y2="155" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Extraction to Processing -->
+  <line x1="280" y1="75" x2="330" y2="75" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="280" y1="155" x2="330" y2="155" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processing to Embedding -->
+  <line x1="430" y1="75" x2="480" y2="105" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="430" y1="155" x2="480" y2="125" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Embedding to MongoDB -->
+  <line x1="580" y1="115" x2="630" y2="115" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Query flow -->
+  <line x1="130" y1="280" x2="180" y2="280" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="280" y1="280" x2="330" y2="280" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="430" y1="280" x2="480" y2="280" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="280" x2="630" y2="280" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="730" y1="280" x2="780" y2="280" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MongoDB to RAG -->
+  <line x1="680" y1="140" x2="680" y2="200" stroke="black" stroke-width="2"/>
+  <line x1="680" y1="200" x2="530" y2="200" stroke="black" stroke-width="2"/>
+  <line x1="530" y1="200" x2="530" y2="250" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- LLM to Streamlit -->
+  <line x1="830" y1="310" x2="830" y2="350" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Streamlit to DOCX -->
+  <line x1="830" y1="410" x2="830" y2="450" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels -->
+  <text x="500" y="30" text-anchor="middle" font-size="16" font-weight="bold">Data Processing Pipeline</text>
+  <text x="500" y="380" text-anchor="middle" font-size="16" font-weight="bold">Query Processing Pipeline</text>
+</svg>
