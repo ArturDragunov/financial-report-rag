@@ -36,9 +36,6 @@ LLM_MODEL=gpt-4.1-mini-2025-04-14
 ## Running the App
 
 ```bash
-# Navigate to the assignment directory
-cd "2-Langchain Basics/2.4-VectorDatabase/assignment"
-
 # Run the Streamlit app
 streamlit run app.py
 ```
